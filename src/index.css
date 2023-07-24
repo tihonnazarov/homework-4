@@ -5,9 +5,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #2AA5A0;
+  background-image: linear-gradient(90deg, #E3535D, #2AA5A0)
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 50px;
+  background-color: #2AA5A0;
+  background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+h3 {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 30px;
+  background-color: #2AA5A0;
+  background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+input {
+  background-color: #2AA5A0;
+  background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+}
+button {
+  background-color: #2AA5A0;
+  background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
