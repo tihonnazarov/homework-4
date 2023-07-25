@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled, { keyframes } from 'styled-components';
 import { fadeIn } from 'react-animations';
 
-const FadeIn = styled.div`animation: 6s ${keyframes`${fadeIn}`}`;
+const FadeIn = styled.div`animation: 4s ${keyframes`${fadeIn}`}`;
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
         fullName: "",
