@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import styled, { keyframes } from 'styled-components';
+import styled, {css, keyframes} from 'styled-components';
 import { zoomIn } from 'react-animations';
-
 const ZoomIn = styled.div`animation: 6s ${keyframes`${zoomIn}`}`;
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
@@ -27,7 +26,16 @@ const RegistrationForm = () => {
     };
 
     return (
-        <ZoomIn> <form onSubmit={handleSubmit} style={{border: "4px solid pink",borderRadius: "20px", padding: "20px", backgroundColor: "black", boxShadow: "0px 14px 28px black"}}>
+
+        <ZoomIn>
+         <form onSubmit={handleSubmit}
+               style={{
+                   border: "4px solid pink",
+                   borderRadius: "20px",
+                   padding: "20px",
+                   backgroundColor: "black",
+                   boxShadow: "0px 14px 28px black"
+         }}>
             <h1>Регистрация</h1>
             <div>
                 <label>
@@ -68,10 +76,16 @@ const RegistrationForm = () => {
                     />
                 </label>
             </div>
-
-            <button type="submit" style={{marginTop: "20px", border: "solid 1px pink"}}>Отправить</button>
-        </form> </ZoomIn>
+             <button type="submit"
+                     style={{
+                 marginTop: "20px",
+                 border: "solid 1px pink"
+             }}
+             >Отправить</button>
+         </form>
+        </ZoomIn>
     );
 };
 
 export default RegistrationForm;
+
