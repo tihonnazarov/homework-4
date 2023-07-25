@@ -34,7 +34,7 @@ const RegistrationForm = () => {
                    borderRadius: "20px",
                    padding: "20px",
                    backgroundColor: "black",
-                   boxShadow: "0px 14px 28px black"
+                   boxShadow: "0px 15px 28px black"
          }}>
             <h1>Регистрация</h1>
             <div>
