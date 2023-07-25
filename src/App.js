@@ -24,7 +24,7 @@ const RegistrationForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} style={{border: "2px solid pink", padding: "20px", backgroundColor: "black", boxShadow: "0px 14px 28px black"}}>
+        <form onSubmit={handleSubmit} style={{border: "4px solid pink",borderRadius: "20px", padding: "20px", backgroundColor: "black", boxShadow: "0px 14px 28px black"}}>
             <h1>Регистрация</h1>
             <div>
                 <label>
