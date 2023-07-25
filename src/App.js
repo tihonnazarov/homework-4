@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
 
+const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
         fullName: "",
@@ -25,12 +28,12 @@ const RegistrationForm = () => {
 
     return (
         <form onSubmit={handleSubmit} style={{border: "4px solid pink",borderRadius: "20px", padding: "20px", backgroundColor: "black", boxShadow: "0px 14px 28px black"}}>
-            <h1>Регистрация</h1>
+            <Bounce><h1>Регистрация</h1></Bounce>
             <div>
                 <label>
                     <h3>ФИО:</h3>
                     <input
-                        style={{border: "solid 1px pink"}}
+                        style={{border: "solid 1px pink", width: "180px"}}
                         type="text"
                         name="fullName"
                         value={formData.fullName}
@@ -56,7 +59,7 @@ const RegistrationForm = () => {
                 <label>
                     <h3>Email адрес:</h3>
                     <input
-                        style={{border: "solid 1px pink"}}
+                        style={{border: "solid 1px pink", width: "160px"}}
                         type="email"
                         name="email"
                         value={formData.email}

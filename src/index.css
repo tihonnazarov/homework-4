@@ -25,6 +25,7 @@ h1 {
   background-image: linear-gradient(90deg, #E3535D, #2AA5A0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
 }
 h3 {
   font-family: Roboto, Arial, sans-serif;
