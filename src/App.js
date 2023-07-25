@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import styled, { keyframes } from 'styled-components';
-import { bounce } from 'react-animations';
+import { fadeIn } from 'react-animations';
 
-const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} infinite`;
+const FadeIn = styled.div`animation: 6s ${keyframes`${fadeIn}`}`;
 const RegistrationForm = () => {
     const [formData, setFormData] = useState({
         fullName: "",
@@ -27,8 +27,8 @@ const RegistrationForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} style={{border: "4px solid pink",borderRadius: "20px", padding: "20px", backgroundColor: "black", boxShadow: "0px 14px 28px black"}}>
-            <Bounce><h1>Регистрация</h1></Bounce>
+        <FadeIn> <form onSubmit={handleSubmit} style={{border: "4px solid pink",borderRadius: "20px", padding: "20px", backgroundColor: "black", boxShadow: "0px 14px 28px black"}}>
+            <h1>Регистрация</h1>
             <div>
                 <label>
                     <h3>ФИО:</h3>
@@ -70,7 +70,7 @@ const RegistrationForm = () => {
             </div>
 
             <button type="submit" style={{marginTop: "20px", border: "solid 1px pink"}}>Отправить</button>
-        </form>
+        </form> </FadeIn>
     );
 };
 
