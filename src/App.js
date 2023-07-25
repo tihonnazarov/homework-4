@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import styled, {css, keyframes} from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+
 import { zoomIn } from 'react-animations';
 const ZoomIn = styled.div`animation: 6s ${keyframes`${zoomIn}`}`;
 const RegistrationForm = () => {
